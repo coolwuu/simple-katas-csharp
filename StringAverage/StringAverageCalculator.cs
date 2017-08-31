@@ -8,5 +8,9 @@ namespace StringAverage
 {
     class StringAverageCalculator
     {
+        internal static int Calculate(string input)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
