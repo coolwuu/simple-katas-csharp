@@ -39,6 +39,12 @@ namespace RnaTranscription
             Assert.AreEqual("U", Rna.Transcribe("A"));
         }
 
+        [Test]
+        public void X()
+        {
+            Assert.AreEqual("UU", Rna.Transcribe("AA"));
+        }
+
         [Ignore("Remove to run test")]
         [Test]
         public void RnaTranscription()
