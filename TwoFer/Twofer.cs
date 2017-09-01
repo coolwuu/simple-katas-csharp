@@ -4,7 +4,7 @@
     {
         public static string Say(string input)
         {
-            throw new System.NotImplementedException();
+            return "One for you, one for me.";
         }
     }
 }
