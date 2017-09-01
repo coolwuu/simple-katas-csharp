@@ -12,19 +12,25 @@ namespace WordCount
         [Test]
         public void empty_input_should_return_0()
         {
-            CollectionAssert.AreEqual(new Dictionary<string,int>(),WordCount.Count(""));
+            CollectionAssert.AreEqual(new Dictionary<string, int>(), WordCount.Count(""));
         }
 
         [Test]
         public void input_ali_should_return_correctly()
         {
-            CollectionAssert.AreEqual(new Dictionary<string, int>{{"ali",1}}, WordCount.Count("ali"));
+            CollectionAssert.AreEqual(new Dictionary<string, int> { { "ali", 1 } }, WordCount.Count("ali"));
         }
 
         [Test]
         public void input_ali_ali_should_return_correctly()
         {
             CollectionAssert.AreEqual(new Dictionary<string, int> { { "ali", 2 } }, WordCount.Count("ali ali"));
+        }
+
+        [Test]
+        public void input_ali_ali_ahmad_should_return_correctly()
+        {
+            CollectionAssert.AreEqual(new Dictionary<string, int> { { "ali", 2 }, { "ahmad", 1 } }, WordCount.Count("ali ali ahmad"));
         }
     }
 }
