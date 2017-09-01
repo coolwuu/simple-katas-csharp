@@ -2,9 +2,9 @@
 {
     public class Leap
     {
-        public static bool IsLeapYear(int i)
+        public static bool IsLeapYear(int year)
         {
-            throw new System.NotImplementedException();
+            return false;
         }
     }
 }
