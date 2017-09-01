@@ -4,11 +4,7 @@
     {
         public static string Say(string input)
         {
-            if(input == "Alice")
-                return "One for Alice, one for me.";
-            if (input == "Bob")
-                return "One for Bob, one for me.";
-            return "One for you, one for me.";
+            return input == string.Empty ? "One for you, one for me." : "One for " + input + ", one for me.";
         }
     }
 }
