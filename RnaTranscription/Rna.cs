@@ -1,17 +1,21 @@
-﻿namespace RnaTranscription
+﻿using System.Collections.Generic;
+using System.Net;
+
+namespace RnaTranscription
 {
     public class Rna
     {
+        public static Dictionary<string, string> GeneMapping = new Dictionary<string, string>()
+        {
+            {"C","G" },
+            {"G","C" },
+            {"T","A" },
+            {"A","U" },
+        };
         public static string Transcribe(string input)
         {
-            if (input == "C")
-                return "G";
-            if (input == "G")
-                return "C";
-            if (input == "T")
-                return "A";
-            if (input == "A")
-                return "U";
+            if (GeneMapping.ContainsKey(input))
+                return GeneMapping[input];
             return string.Empty;
         }
     }
