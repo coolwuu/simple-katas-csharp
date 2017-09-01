@@ -6,9 +6,9 @@ namespace StringAverage
     {
         public static string Calculate(string input)
         {
-            if (input == "one")
-                return "one";
-            return "n/a";
+            if (String.IsNullOrEmpty(input))
+                return "n/a";
+            return input;
         }
     }
 }
