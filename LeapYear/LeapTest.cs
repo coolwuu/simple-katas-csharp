@@ -28,7 +28,7 @@ namespace LeapYear
             Assert.True(Leap.IsLeapYear(2020));
         }
 
-        [Ignore("Remove to run test")]
+        
         [Test]
         public void Year_divisible_by_100_not_divisible_by_400_is_common_year()
         {
