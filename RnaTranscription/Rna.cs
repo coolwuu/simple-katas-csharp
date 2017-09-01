@@ -10,6 +10,8 @@
                 return "C";
             if (input == "T")
                 return "A";
+            if (input == "A")
+                return "U";
             return string.Empty;
         }
     }

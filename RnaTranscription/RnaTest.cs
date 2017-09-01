@@ -33,7 +33,7 @@ namespace RnaTranscription
             Assert.AreEqual("A", Rna.Transcribe("T"));
         }
 
-        [Ignore("Remove to run test")]
+        
         [Test]
         public void RnaTranscriptionOfAdenineIsUracil()
         {
