@@ -6,6 +6,8 @@
         {
             if (input == "C")
                 return "G";
+            if (input == "G")
+                return "C";
             return string.Empty;
         }
     }

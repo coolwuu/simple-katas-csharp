@@ -19,7 +19,7 @@ namespace RnaTranscription
             Assert.AreEqual("G", Rna.Transcribe("C"));
         }
 
-        [Ignore("Remove to run test")]
+        
         [Test]
         public void RnaTranscriptionOfGuanineIsCytosine()
         {
