@@ -26,7 +26,7 @@ namespace RnaTranscription
             Assert.AreEqual("C", Rna.Transcribe("G"));
         }
 
-        [Ignore("Remove to run test")]
+        
         [Test]
         public void RnaTranscriptionOfThymineIsAdenine()
         {

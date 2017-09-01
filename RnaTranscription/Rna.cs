@@ -8,6 +8,8 @@
                 return "G";
             if (input == "G")
                 return "C";
+            if (input == "T")
+                return "A";
             return string.Empty;
         }
     }
