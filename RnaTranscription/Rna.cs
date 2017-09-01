@@ -4,7 +4,7 @@
     {
         public static string Transcribe(string empty)
         {
-            throw new System.NotImplementedException();
+            return string.Empty;
         }
     }
 }
