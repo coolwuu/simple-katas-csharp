@@ -52,7 +52,7 @@ namespace RnaTranscription
             Assert.AreEqual("UGCACCAGAAUU", Rna.Transcribe("ACGTGGTCTTAA"));
         }
 
-        [Ignore("Remove to run test")]
+      
         [Test]
         [ExpectedException(typeof(ArgumentException), ExpectedMessage = "Invalid input")]
         public void RnaTranscriptionOfRnaThrowsAnError()

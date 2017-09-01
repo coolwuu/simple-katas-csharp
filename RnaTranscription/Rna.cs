@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Net;
 
 namespace RnaTranscription
@@ -17,8 +18,9 @@ namespace RnaTranscription
             var result = string.Empty;
             foreach (var character in input)
             {
-                if (GeneMapping.ContainsKey(character))
-                    result += GeneMapping[character];
+                if (!GeneMapping.ContainsKey(character))
+                     throw new ArgumentException("Invalid input");
+                result += GeneMapping[character];
             }
 
             return result;
