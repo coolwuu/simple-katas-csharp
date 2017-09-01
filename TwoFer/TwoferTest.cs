@@ -38,7 +38,7 @@ namespace TwoFer
             Assert.AreEqual(expected, Twofer.Say(input));
         }
 
-        [Ignore("Remove to run test")]
+       
         [Test]
         public void EmptyStringGiven()
         {
