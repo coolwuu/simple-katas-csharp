@@ -25,5 +25,12 @@ namespace StringAverage
             var input = "two";
             Assert.AreEqual("two", StringAverageCalculator.Calculate(input));
         }
+
+        [Test]
+        public void Input_two__four_return_three()
+        {
+            var input = "two four";
+            Assert.AreEqual("three", StringAverageCalculator.Calculate(input));
+        }
     }
 }
