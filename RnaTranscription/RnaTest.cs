@@ -60,7 +60,7 @@ namespace RnaTranscription
             Rna.Transcribe("U");
         }
 
-        [Ignore("Remove to run test")]
+        
         [Test]
         [ExpectedException(typeof(ArgumentException), ExpectedMessage = "Invalid input")]
         public void RnaTranscriptionOfInvalidInputThrowsAnError()
