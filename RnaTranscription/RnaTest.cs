@@ -68,7 +68,7 @@ namespace RnaTranscription
             Rna.Transcribe("BFV");
         }
 
-        [Ignore("Remove to run test")]
+        
         [Test]
         [ExpectedException(typeof(ArgumentException), ExpectedMessage = "Invalid input")]
         public void RnaTranscriptionOfPartiallyInvalidInput()
