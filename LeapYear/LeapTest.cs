@@ -35,7 +35,7 @@ namespace LeapYear
             Assert.False(Leap.IsLeapYear(2100));
         }
 
-        [Ignore("Remove to run test")]
+        
         [Test]
         public void Year_divisible_by_400_is_leap_year()
         {
