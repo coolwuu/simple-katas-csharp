@@ -13,17 +13,17 @@ namespace RnaTranscription
             {'T',"A" },
             {'A',"U" },
         };
-        public static string Transcribe(string input)
+        public static string Transcribe(string dnaStrand)
         {
-            var result = string.Empty;
-            foreach (var character in input)
+            var rnaStrand = string.Empty;
+            foreach (var nucleotide in dnaStrand)
             {
-                if (!GeneMapping.ContainsKey(character))
+                if (!GeneMapping.ContainsKey(nucleotide))
                      throw new ArgumentException("Invalid input");
-                result += GeneMapping[character];
+                rnaStrand += GeneMapping[nucleotide];
             }
 
-            return result;
+            return rnaStrand;
         }
     }
 }
