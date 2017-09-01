@@ -5,18 +5,23 @@ namespace RnaTranscription
 {
     public class Rna
     {
-        public static Dictionary<string, string> GeneMapping = new Dictionary<string, string>()
+        public static Dictionary<char, string> GeneMapping = new Dictionary<char, string>()
         {
-            {"C","G" },
-            {"G","C" },
-            {"T","A" },
-            {"A","U" },
+            {'C',"G" },
+            {'G',"C" },
+            {'T',"A" },
+            {'A',"U" },
         };
         public static string Transcribe(string input)
         {
-            if (GeneMapping.ContainsKey(input))
-                return GeneMapping[input];
-            return string.Empty;
+            var result = string.Empty;
+            foreach (var character in input)
+            {
+                if (GeneMapping.ContainsKey(character))
+                    result += GeneMapping[character];
+            }
+
+            return result;
         }
     }
 }
