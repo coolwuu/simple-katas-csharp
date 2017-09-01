@@ -11,5 +11,12 @@ namespace StringAverage
             var input = string.Empty;
             Assert.AreEqual("n/a", StringAverageCalculator.Calculate(input));
         }
+
+        [Test]
+        public void Input_one__return_one()
+        {
+            var input = "one";
+            Assert.AreEqual("one", StringAverageCalculator.Calculate(input));
+        }
     }
 }
