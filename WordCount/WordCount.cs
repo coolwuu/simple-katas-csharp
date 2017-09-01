@@ -11,7 +11,7 @@ namespace WordCount
     {
         public static Dictionary<string,int> Count(string empty)
         {
-            throw new NotImplementedException();
+            return new Dictionary<string, int>();
         }
     }
 }
